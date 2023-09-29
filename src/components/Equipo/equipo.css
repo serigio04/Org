@@ -1,0 +1,29 @@
+.equipo{
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Prata";
+    /* margin-bottom: 1.2vw; */
+    position: relative;
+}
+.equipo h3{
+    color: #212121;
+    font-weight: 400;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 3px
+}
+
+.equipo__colaboradores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .equipo__color{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+} */
