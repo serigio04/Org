@@ -1,4 +1,5 @@
 import "./listaOpciones.css"
+import { Select, InputLabel, MenuItem, FormControl} from "@mui/material"
 
 const Listaopciones = (props) => {
 //metodo map -> nombreArreglo.map( (equipo, index) => {
@@ -10,15 +11,23 @@ const Listaopciones = (props) => {
         props.setEquipo(e.target.value)
     }
 
-    return <div className="listaOpciones">
-        <label>Equipos</label>
+    return <FormControl className="listaOpciones">
+        <InputLabel id="label-for-select">Equipos</InputLabel >
         {/* map es un valor que unicamente se puede usar en los arrays, llama al valor seleccionado */}
-        <select value={props.valor} onChange={manejarCambio}>
+        <Select
+            id="select-team"
+            // value={props.valor}
+            onChange={manejarCambio}
+            labelId="label-for-select"
+            label="Equipos"
+            autoWidth
+            
+        >
             {/* Se usan estos elementos para simular un placeholder en el select, asi la opcion seleccionar equipos no es una posible eleccion */}
-            <option value="" defaultValue="" hidden>Seleccionar equipo</option>
-            { props.equipos.map((equipo, index) => <option key={index} value={equipo}>{equipo}</option>) }
-        </select>
-    </div>
+            {/* <MenuItem value="" defaultValue="" hidden>Seleccionar equipo</MenuItem> */}
+            { props.equipos.map((equipo, index) => <MenuItem key={index} value={equipo}>{equipo}</MenuItem>) }
+        </Select>
+    </FormControl>
 }
 
 export default Listaopciones
