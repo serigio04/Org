@@ -24,7 +24,8 @@ const Listaopciones = (props) => {
             
         >
             {/* Se usan estos elementos para simular un placeholder en el select, asi la opcion seleccionar equipos no es una posible eleccion */}
-            {/* <MenuItem value="" defaultValue="" hidden>Seleccionar equipo</MenuItem> */}
+            <MenuItem disabled value="">
+            <em>Seleccione un equipo</em></MenuItem>
             { props.equipos.map((equipo, index) => <MenuItem key={index} value={equipo}>{equipo}</MenuItem>) }
         </Select>
     </FormControl>

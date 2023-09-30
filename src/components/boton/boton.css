@@ -8,7 +8,9 @@
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    margin: 32px 0;
+    margin: 32px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn:hover{
