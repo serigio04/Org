@@ -44,7 +44,6 @@ const Formulario = (props) => {
             <CampoTexto 
                 title="Foto" 
                 placeholder="Ingresar enlace de foto"
-                required
                 valor={foto} 
                 setValor={setFoto}
             />
