@@ -14,7 +14,27 @@
 }
 
 .orgSection img{
-    position: relative;
-    left: 30%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 440px) {
+    .orgSection{
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+    }
+    .title{
+        font-size: 2rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .orgSection img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        cursor: pointer;
+    }
 }
