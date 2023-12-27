@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid'
 import './App.css';
 import Header from './components/header/header';
@@ -49,40 +49,27 @@ function App() {
     }//6
   ])
   console.log(setEquipos)
-  const [colaboradores, setColaboradores] = useState([{
-    id: uuid(),
-    equipo: "Front end",
-    foto: "https://e1.pxfuel.com/desktop-wallpaper/818/321/desktop-wallpaper-nino-nakano-icons-di-2021-nino-aesthetic-thumbnail.jpg",
-    nombre: "Nino Nakano", 
-    puesto: "Chef jefa"
-  },
-  {
-    id: uuid(),
-    equipo: "Programacion",
-    foto: "https://64.media.tumblr.com/bd85175ce97452bb985b6416f74684e5/tumblr_pcdsv8wLK71xpfzvqo3_400.jpg",
-    nombre: "Zero two", 
-    puesto: "Parasito - Pistilo"
-  },
-  {
-    id: uuid(),
-    equipo: "Innovacion y gestion",
-    foto: "https://64.media.tumblr.com/bd85175ce97452bb985b6416f74684e5/tumblr_pcdsv8wLK71xpfzvqo3_400.jpg",
-    nombre: "Zero two", 
-    puesto: "Parasito - Pistilo"
-  },
-])
+  // Usamos un estado inicializador para cargar los colaboradores desde localStorage
+  const [colaboradores, setColaboradores] = useState(() => {
+    const storedColaboradores = localStorage.getItem('colaboradores');
+    return storedColaboradores ? JSON.parse(storedColaboradores) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('colaboradores', JSON.stringify(colaboradores));
+  }, [colaboradores]);
+
+const registrarColaborador = (colaborador) => {
+  colaborador.id = uuid();
+  //spread operator, crea una copia de lo que existe y agrega un nuevo elemento al arreglo
+  setColaboradores([...colaboradores, colaborador]);
+  console.log('Nuevo colaborador registrado:', colaborador);
+};
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //condicion && se muestra 
   const cambiarMostrar = () => {
     actualizarMostrar(!mostrarFormulario)
-  }
-
-  //Registrar nuevo colaborador
-  const registrarColaborador = (colaborador) => {
-    console.log("Nuevo colaborador: ", colaborador)
-    //spread operator, crea una copia de lo que existe y agrega un nuevo elemento al arreglo
-    setColaboradores([...colaboradores, colaborador])
   }
 
   //eliminar colaborador

@@ -19,9 +19,7 @@ const Listaopciones = (props) => {
             // value={props.valor}
             onChange={manejarCambio}
             labelId="label-for-select"
-            label="Equipos"
-            autoWidth
-            
+            label="Equipos"            
         >
             {/* Se usan estos elementos para simular un placeholder en el select, asi la opcion seleccionar equipos no es una posible eleccion */}
             <MenuItem disabled value="">
