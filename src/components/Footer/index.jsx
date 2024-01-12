@@ -3,8 +3,8 @@ import "./Footer.css"
 const Footer = () => {
     return <footer className='footer' style={{ backgroundImage: "url(/img/footer.png)" }}>
         <div className='redes'>
-            <a href='https://www.facebook.com/julio.smith.75641297' target="blank">
-                <img src="/img/facebook.png" alt='Facebook' />
+            <a href='https://github.com/serigio04' target="blank">
+                <img id="github" src="\img\github.png" alt='Facebook' />
             </a>
             <a href='https://www.linkedin.com/in/sergio-gomar/' target="blank">
                 <img id="linkedin" src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt='Linkedin'/>
@@ -19,4 +19,4 @@ const Footer = () => {
 
 }
 
-export default Footer
+export default Footer 

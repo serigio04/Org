@@ -16,7 +16,7 @@
     padding: 0px 15px;
 }
 
-#linkedin{
+#linkedin, #github{
     filter: invert(100);
     max-width: 24px;
 }
