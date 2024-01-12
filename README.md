@@ -9,7 +9,9 @@ En el proyecto se hace uso de los siguientes conocimientos:
 - Entre otros
 
 ### Agregar Colaborador
-1 Hacer clic sobre la siguiente imagen
-![Añadir colaborador](https://ibb.co/BtFDZgQ)
-2 Llenar el formulario 
-![Llenar formulario](https://ibb.co/wRNDjx4)
+<ul>
+  <li>Hacer clic sobre la siguiente imagen</li>
+  <li><img src="https://ibb.co/BtFDZgQ" alt="img org"/></li>
+  <li>Llenar formulario</li>
+  <li><img src="https://ibb.co/wRNDjx4" alt="form org"/></li>
+</ul>
