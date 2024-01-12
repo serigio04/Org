@@ -11,7 +11,7 @@ En el proyecto se hace uso de los siguientes conocimientos:
 ### Agregar Colaborador
 <ul>
   <li>Hacer clic sobre la siguiente imagen</li>
-  <li><img src="https://ibb.co/BtFDZgQ" alt="img org"/></li>
+  <li style="list-style: none"><a href="https://imgbb.com/"><img src="https://i.ibb.co/BtFDZgQ/org.png" alt="org" border="0"></a></li>
   <li>Llenar formulario</li>
-  <li><img src="https://ibb.co/wRNDjx4" alt="form org"/></li>
+  <li style="list-style: none"><a href="https://ibb.co/wRNDjx4"><img src="https://i.ibb.co/wRNDjx4/org2.png" alt="org2" border="0"></a></li>
 </ul>
