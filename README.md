@@ -7,3 +7,9 @@ En el proyecto se hace uso de los siguientes conocimientos:
 - Programación Modular
 - Estados
 - Entre otros
+
+### Agregar Colaborador
+1 Hacer clic sobre la siguiente imagen
+![Añadir colaborador](https://ibb.co/BtFDZgQ)
+2 Llenar el formulario 
+![Llenar formulario](https://ibb.co/wRNDjx4)
