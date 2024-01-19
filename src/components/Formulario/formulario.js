@@ -36,7 +36,7 @@ const Formulario = (props) => {
             />
             <CampoTexto 
                 title="Puesto" 
-                laceholder="Ingresar puesto"
+                placeholder="Ingresar puesto"
                 required
                 valor={puesto} 
                 setValor={setPuesto}
