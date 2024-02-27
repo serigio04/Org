@@ -15,3 +15,4 @@ En el proyecto se hace uso de los siguientes conocimientos:
   <li>Llenar formulario</li>
   <li style="list-style: none"><a href="https://ibb.co/wRNDjx4"><img src="https://i.ibb.co/wRNDjx4/org2.png" alt="org2" border="0"></a></li>
 </ul>
+<p>Proyecto disppnible <a href="https://org-sg.netlify.app/">aqui</a></p>
